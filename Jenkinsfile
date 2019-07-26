@@ -3,7 +3,7 @@ node {
 
 stage('password') {
         echo "Enter the password" {
-            input id: 'From: Custom ID field', message: 'Enter the password to proceed further', ok: 'GO'
+            input id: 'Admin', message: 'password?', ok: 'admin', submitter: 'admin'
         }
     }
 stage('message') {
