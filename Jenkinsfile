@@ -1,3 +1,5 @@
+
+properties([parameters([password(defaultValue: 'admin', description: '', name: 'admin')])])
 node {
 
 stage('Approval') {
