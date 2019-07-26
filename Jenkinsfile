@@ -13,7 +13,7 @@ stage('password') {
         echo "Password: ${params.PASSWORD}"
         //echo "Enter the password" {
           //  input id: 'Admin', message: 'password?', ok: 'admin'
-        }
+        
     }
 
   }
