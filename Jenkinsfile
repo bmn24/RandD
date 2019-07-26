@@ -2,9 +2,9 @@
 properties([parameters([password(defaultValue: 'admin', description: '', name: 'admin')])])
 node {
 
-stage('Approval') {
-        timeout(time:3, unit:'DAYS') {
-            input 'Do I have your approval for deployment?'
+stage('password') {
+        echo "Enter the password" {
+            input id: 'admin', message: 'Enter the password to proceed further', ok: 'GO'
         }
     }
 stage('message') {
